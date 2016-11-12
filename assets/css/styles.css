@@ -1,0 +1,162 @@
+header {
+	height: 60px;
+	top: 0px;
+	width: 100%;
+	padding: 3px;
+	position: fixed;
+	font-size: 34px;
+	font-family: cursive;
+	justify-content: center;
+	background-image: url("../images/wine-background.jpg");
+	background-color: #6f737a;
+
+}
+
+.header-text {
+	color: #ffffff;
+	position: relative;
+	font-size: 40px;
+	top: 1px;
+	right: 20px;
+}
+
+.header-text:hover {
+	text-decoration: none;
+	color: #ccffff;
+}
+
+.btn {
+	margin: -12px 0 0 0;
+	width: 100px;
+	border: none;
+}
+
+.btn-xl {
+	height: 80px;
+	width: 160px;
+	border-radius: 10px;
+	font-size: 20px;
+	line-height: 3em;
+}
+
+.btn-success { background-color: #00b300; }
+
+.btn-danger { background-color: #b30000; }
+
+body {
+	margin-top: 100px;
+	background-color: #005266;
+	color: white;
+	position: static;
+	text-align: center;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+	font-style: none;
+}
+.home {
+	background-color: orange;
+}
+
+#home-img {
+	height: 150px;
+	width: 100px;
+}
+
+.home-pitch  {
+	font-size: 10px;
+	font-family: cursive;
+	color: #913b45;
+	width: 50%;
+	height: 180px;
+	position: static;
+	margin: 40px 0 50px 25%;
+	text-align: center;
+	justify-content: center;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.home-pitch h1 {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 70px;
+}
+
+#home-tagline {
+	font-family: Verdana;
+	font-size: 26px;
+}
+
+#keyboard {
+	-webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	/*flex: 1;*/
+	width: 95%;
+	background-color: #262626;
+	margin: 10% 0 0 2.5%;
+	align-content: center;
+	padding: 25px;
+	font-size: 30px;
+	border-radius: 12px;
+}
+
+#keys {
+	display: flex;
+	/*flex: 1;*/
+	background-color: white;
+	align-content: center;
+}
+.white {
+	display: flex;
+	/*flex: 1;*/
+	flex: 1;
+	align-items: flex-end;
+	height: 500px;
+	border: 1px solid black;
+	border-radius: 15px;
+	color: #ff99ff;
+	background-color: white;
+	justify-content: center;
+	margin: 0 0;
+}
+
+.white:active {
+	background-color: #e6e6e6;
+	color: black;
+}
+
+.white:hover {
+	border-color: pink;
+
+}
+
+
+.black {
+	display: flex;
+	position: relative;
+	align-items: flex-end;
+	flex: .7;
+	height: 300px;
+	justify-content: center;
+	border-radius: 10px;
+	color: #ff99ff;
+	background-color: black;
+	border: 1px solid black;
+	margin: 0 -5%;
+}
+.black:active {
+	background-color: #333333;
+	color: white;
+	width: 290px;
+}
+
+.black:hover {
+	border: 1px solid pink;
+}
