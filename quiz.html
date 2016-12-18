@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Pitch Tuner: Quiz Mode</title>
+<meta charset="utf-8">
+<title>Pitch Trainer: Quiz Mode</title>
 
-	<link rel="icon" href="assets/images/32nd_note.png">
+  <link rel="icon" href="assets/images/32nd_note.png">
 
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-	<!-- Custom styles -->
-	<link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!--[if IE]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
+  <script>
+  var sounds = [
+    "assets/sounds/c3.mp3",
+    "assets/sounds/c3s.mp3",
+    "assets/sounds/d3.mp3",
+    "assets/sounds/d3s.mp3",
+    "assets/sounds/e3.mp3",
+    "assets/sounds/f3.mp3",
+    "assets/sounds/f3s.mp3",
+    "assets/sounds/g3.mp3",
+    "assets/sounds/g3s.mp3",
+    "assets/sounds/a3.mp3",
+    "assets/sounds/a3s.mp3",
+    "assets/sounds/b3.mp3"
+  ];
+
+  var randomSound = sounds[Math.floor(Math.random() * sounds.length)];
+
+  function playSound(file)
+  {
+    var audio = new Audio(randomSound);
+    audio.play();
+  }
+  </script>
+
+
 </head>
 
-<body class="quiz">
+<body>
 
-<header>
-	<a href = "index.html" class="header-text">Pitch Trainer</a>
-	<a class="btn btn-lg btn-success" href="training.html" role="button">Training</a>
-    <a class="btn btn-lg btn-danger" href="quiz.html" role="button">Quiz</a>
-</header>
+  <header>
+    <a href = "index.html" class="header-text">Pitch Trainer</a>
+    <a class="btn btn-header btn-lg btn-success" href="training.html" role="button">Training</a>
+    <a class="btn btn-header btn-lg btn-danger" href="quiz.html" role="button">Quiz</a>
+  </header>
+
+  <div class="btn btn-lg btn-info btn-note" onclick="playSound(randomSound);">Play Note</div>
 
 </body>
-
 </html>

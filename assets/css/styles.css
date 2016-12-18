@@ -25,23 +25,30 @@ header {
 	color: #ccffff;
 }
 
-.btn {
+.btn-header {
 	margin: -12px 0 0 0;
 	width: 100px;
 	border: none;
+	font-family: Verdana;
 }
 
-.btn-xl {
+.btn-home {
 	height: 80px;
 	width: 160px;
+	margin: 24px 5px 0 5px;
 	border-radius: 10px;
-	font-size: 20px;
-	line-height: 3em;
+	font-family: Verdana;
+	font-weight: 300;
+	font-size: 24px;
 }
 
 .btn-success { background-color: #00b300; }
 
 .btn-danger { background-color: #b30000; }
+
+.btn-note {
+	margin-top: 40px;
+}
 
 body {
 	margin-top: 100px;
@@ -51,13 +58,13 @@ body {
 	text-align: center;
 }
 
-a{
+a {
 	color: white;
 	text-decoration: none;
 	font-style: none;
 }
 .home {
-	background-color: orange;
+	background-color: black;
 }
 
 #home-img {
@@ -68,14 +75,15 @@ a{
 .home-pitch  {
 	font-size: 10px;
 	font-family: cursive;
-	color: #913b45;
-	width: 50%;
-	height: 180px;
+	color: white;
+	width: 100%;
+	height: 360px;
 	position: static;
-	margin: 40px 0 50px 25%;
+	margin: 40px 0 50px 0;
+	padding: 50px;
 	text-align: center;
 	justify-content: center;
-	background-color: white;
+	background-color: #005266;
 	border-radius: 10px;
 }
 
@@ -84,6 +92,19 @@ a{
 	vertical-align: middle;
 	font-size: 70px;
 }
+
+.home-pitch a {
+	text-decoration: none;
+}
+
+.home-pitch a:hover {
+	color: #ccffff;
+}
+
+/*.home-pitch:click {
+	text-decoration: none;
+	color: orange;
+}*/
 
 #home-tagline {
 	font-family: Verdana;
@@ -105,6 +126,7 @@ a{
 	padding: 25px;
 	font-size: 30px;
 	border-radius: 12px;
+	box-shadow: 10px 1px 20px #000000;
 }
 
 #keys {
@@ -114,38 +136,41 @@ a{
 	align-content: center;
 }
 .white {
-	display: flex;
+	display: inline-flex;
 	/*flex: 1;*/
 	flex: 1;
 	align-items: flex-end;
 	height: 500px;
 	border: 1px solid black;
-	border-radius: 15px;
+	border-radius: 4px 4px 15px 15px;
 	color: #ff99ff;
 	background-color: white;
 	justify-content: center;
 	margin: 0 0;
+	/*box-shadow: 10px 10px 10px #000000;*/
+	box-shadow: 10px 0px 10px #000000;
 }
 
 .white:active {
-	background-color: #e6e6e6;
+	/*background-color: #e6e6e6;*/
 	color: black;
+	box-shadow: inset 0px 0px 10px #000000;
 }
 
 .white:hover {
-	border-color: pink;
+	/*border-color: pink;*/
 
 }
 
 
 .black {
-	display: flex;
+	display: inline-flex;
 	position: relative;
 	align-items: flex-end;
 	flex: .7;
 	height: 300px;
 	justify-content: center;
-	border-radius: 10px;
+	border-radius: 4px 4px 10px 10px;
 	color: #ff99ff;
 	background-color: black;
 	border: 1px solid black;
