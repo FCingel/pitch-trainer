@@ -9,6 +9,7 @@ header {
 	justify-content: center;
 	background-image: url("../images/wine-background.jpg");
 	background-color: #6f737a;
+	box-shadow: 0 2px 5px #0d0d0d;
 
 }
 
@@ -18,11 +19,12 @@ header {
 	font-size: 40px;
 	top: 1px;
 	right: 20px;
+	text-shadow: 1px 1px 1px black;
 }
 
 .header-text:hover {
 	text-decoration: none;
-	color: #ccffff;
+	color: #ffe6f2;
 }
 
 .btn-header {
@@ -32,9 +34,13 @@ header {
 	font-family: Verdana;
 }
 
+.btn-lg {
+	box-shadow: 1px 2px 3px #1a000d;
+}
+
 .nav-logo {
-	height: 40px;
-	width: 30px;
+	height: 46px;
+	width: 34px;
 	margin-left: 10px;
 }
 
@@ -46,26 +52,34 @@ header {
 	font-family: Verdana;
 	font-weight: 300;
 	font-size: 24px;
+	box-shadow: 1px 1px 3px #1a000d;
 }
 
 .btn-success { background-color: #00b300; }
 
 .btn-danger { background-color: #b30000; }
 
+.btn-about {
+	margin: 5px 5px;
+}
+
 .btn-note { 
 	margin: 100px auto 30px auto;
 	box-shadow: 1px 2px 6px #002933;
+	font-weight: 700;
  }
 
 .btn-answer {
 	padding: 10px;
 	box-shadow: 1px 2px 6px #002933;
+	font-weight: 500;
 }
 
 #quiz-question {
 	font-family: Verdana, Arial;
 	font-weight: 700;
-	margin-bottom: 20px;
+	margin-bottom: 8px;
+	text-shadow: 1px 1px 1px black;
 }
 
 .quiz-answer {
@@ -107,11 +121,13 @@ a {
 }
 .home {
 	background-color: black;
+	background-image: url("../images/soundwaves-bg.jpg");
+	/*background-size: cover;*/
 }
 
 #home-img {
-	height: 150px;
-	width: 100px;
+	height: 200px;
+	width: 500px;
 }
 
 .home-pitch  {
@@ -121,12 +137,13 @@ a {
 	width: 100%;
 	height: 360px;
 	position: static;
-	margin: 40px 0 50px 0;
+	margin: -45px 0 50px 0;
 	padding: 50px;
 	text-align: center;
 	justify-content: center;
-	background-color: #005266;
+	/*background-color: #005266;*/
 	border-radius: 10px;
+	text-shadow: 1px 1px 3px black;
 }
 
 .home-pitch h1 {
@@ -140,7 +157,7 @@ a {
 }
 
 .home-pitch a:hover {
-	color: #ccffff;
+	color: #ffe6f2;
 }
 
 /*.home-pitch:click {
@@ -189,7 +206,6 @@ a {
 	background-color: white;
 	justify-content: center;
 	margin: 0 0;
-	/*box-shadow: 10px 10px 10px #000000;*/
 	box-shadow: 10px 0px 10px #000000;
 }
 
@@ -200,10 +216,9 @@ a {
 }
 
 .white:hover {
-	/*border-color: pink;*/
+	border-color: pink;
 
 }
-
 
 .black {
 	display: inline-flex;
@@ -226,4 +241,15 @@ a {
 
 .black:hover {
 	border: 1px solid pink;
+}
+
+.about {
+	background-image: url("../images/piano-bg.jpg");
+	background-size: cover;
+}
+
+.about-info {
+	margin-top: 130px;
+	font-family: Verdana;
+	text-shadow: 1px 1px 3px black;
 }
