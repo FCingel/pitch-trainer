@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Pitch Trainer: Quiz Mode</title>
 
-  <link rel="icon" href="assets/images/32nd_note.png">
+  <link rel="icon" href="assets/images/32nd-note.png">
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,44 +16,46 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-
-  <script>
-  var sounds = [
-    "assets/sounds/c3.mp3",
-    "assets/sounds/c3s.mp3",
-    "assets/sounds/d3.mp3",
-    "assets/sounds/d3s.mp3",
-    "assets/sounds/e3.mp3",
-    "assets/sounds/f3.mp3",
-    "assets/sounds/f3s.mp3",
-    "assets/sounds/g3.mp3",
-    "assets/sounds/g3s.mp3",
-    "assets/sounds/a3.mp3",
-    "assets/sounds/a3s.mp3",
-    "assets/sounds/b3.mp3"
-  ];
-
-  var randomSound = sounds[Math.floor(Math.random() * sounds.length)];
-
-  function playSound(file)
-  {
-    var audio = new Audio(randomSound);
-    audio.play();
-  }
-  </script>
-
+<script src="assets/js/pitch-trainer.js"></script>
 
 </head>
 
 <body>
 
   <header>
+    <a href="index.html" class="pull-left"><img class="nav-logo" src="assets/images/nav-logo.png" /></a> 
     <a href = "index.html" class="header-text">Pitch Trainer</a>
     <a class="btn btn-header btn-lg btn-success" href="training.html" role="button">Training</a>
     <a class="btn btn-header btn-lg btn-danger" href="quiz.html" role="button">Quiz</a>
   </header>
 
-  <div class="btn btn-lg btn-info btn-note" onclick="playSound(randomSound);">Play Note</div>
-
+  <div class="container-fluid">
+    <div class="btn btn-lg btn-warning btn-note" onclick="playRandom(random);">Play Note</div>
+    <div id="quiz-question">Which note is this?</div>
+    <div class="row">
+    <div class="col-sm-6 quiz-answer">
+      <div id="0" class="col-sm-2 btn btn-info btn-answer" onclick="checkAnswer(this.id); playSound('assets/sounds/c3.mp3');">C</div>
+      <div id="1" class="col-sm-2 btn btn-info btn-answer" onclick="checkAnswer(this.id); playSound('assets/sounds/c3s.mp3');">C#</div>
+      <div id="2" class="col-sm-2 btn btn-info btn-answer" onclick="checkAnswer(this.id); playSound('assets/sounds/d3.mp3');">D</div>
+      <div id="3" class="col-sm-2 btn btn-info btn-answer" onclick="checkAnswer(this.id); playSound('assets/sounds/d3s.mp3');">D#</div>
+      <div id="4" class="col-sm-2 btn btn-info btn-answer" onclick="checkAnswer(this.id); playSound('assets/sounds/e3.mp3');">E</div>
+      <div id="5" class="col-sm-2 btn btn-info btn-answer" onclick="checkAnswer(this.id); playSound('assets/sounds/f3.mp3');">F</div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-6 quiz-answer">
+      <div id="6" class="col-sm-2 btn btn-info btn-answer" onclick="checkAnswer(this.id); playSound('assets/sounds/f3s.mp3');">F#</div>
+      <div id="7" class="col-sm-2 btn btn-info btn-answer" onclick="checkAnswer(this.id); playSound('assets/sounds/g3.mp3');">G</div>
+      <div id="8" class="col-sm-2 btn btn-info btn-answer" onclick="checkAnswer(this.id); playSound('assets/sounds/g3s.mp3');">G#</div>
+      <div id="9" class="col-sm-2 btn btn-info btn-answer" onclick="checkAnswer(this.id); playSound('assets/sounds/a3.mp3');">A</div>
+      <div id="10" class="col-sm-2 btn btn-info btn-answer" onclick="checkAnswer(this.id); playSound('assets/sounds/a3s.mp3');">A#</div>
+      <div id="11" class="col-sm-2 btn btn-info btn-answer" onclick="checkAnswer(this.id); playSound('assets/sounds/b3.mp3');">B</div>
+    </div>
+    </div>
+    <div id="correct">Correct!</div>
+    <div id="incorrect">Incorrect!</div>
+    <center><a href="quiz.html" id="next" class="btn btn-success">Next</a></center>
+    <div srcgetScore();
+  </div>
 </body>
 </html>

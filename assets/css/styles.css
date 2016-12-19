@@ -32,6 +32,12 @@ header {
 	font-family: Verdana;
 }
 
+.nav-logo {
+	height: 40px;
+	width: 30px;
+	margin-left: 10px;
+}
+
 .btn-home {
 	height: 80px;
 	width: 160px;
@@ -46,8 +52,44 @@ header {
 
 .btn-danger { background-color: #b30000; }
 
-.btn-note {
-	margin-top: 40px;
+.btn-note { 
+	margin: 100px auto 30px auto;
+	box-shadow: 1px 2px 6px #002933;
+ }
+
+.btn-answer {
+	padding: 10px;
+	box-shadow: 1px 2px 6px #002933;
+}
+
+#quiz-question {
+	font-family: Verdana, Arial;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.quiz-answer {
+	left: 25%;
+	margin-top: 2px;
+}
+
+#correct {
+	color: #00ff00;
+	font-size: 34px;
+	text-shadow: 1px 1px 1px #008000;
+	display: none;
+}
+
+#incorrect {
+	color: red;
+	font-size: 34px;
+	text-shadow: 1px 1px 2px #800000;
+	display: none;
+}
+
+#next {
+	display: none;
+	width: 100px;
 }
 
 body {

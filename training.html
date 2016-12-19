@@ -3,7 +3,7 @@
 <head>
 	<title>Pitch Trainer: Training Mode</title>
 
-	<link rel="icon" href="assets/images/32nd_note.png">
+	<link rel="icon" href="assets/images/32nd-note.png">
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,6 +15,7 @@
 <body class="training">
 
 <header>
+    <a href="index.html" class="pull-left"><img class="nav-logo" src="assets/images/nav-logo.png" /></a> 
 	<a href = "index.html" class="header-text">Pitch Trainer</a>
 	<a class="btn btn-header btn-lg btn-success" href="training.html" role="button">Training</a>
     <a class="btn btn-header btn-lg btn-danger" href="quiz.html" role="button">Quiz</a>
@@ -40,13 +41,6 @@
 		<!-- <div id="c" class="white">C</div> -->
 	</div>
 
-
-<script>
-function playSound(file)
-{
-  var audio = new Audio(file);
-  audio.play();
-}
-</script>
+<script src="assets/js/pitch-trainer.js"></script>
 
 </html>
